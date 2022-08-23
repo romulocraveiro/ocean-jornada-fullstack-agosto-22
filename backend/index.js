@@ -2,8 +2,8 @@ const express = require("express");
 const { MongoClient } = require("mongodb");
 
 // const url = "mongodb://localhost:27017";
-const url = "mongodb+srv://admin:beeDsNaD7hrUJflY@cluster0.0tjjv1e.mongodb.net/";
-const dbName = "jornada-fullstack-agosto-22";
+const url = "mongodb+srv://admin:dZ9d7NMpCVLsEVcJ@cluster0.lpxaohs.mongodb.net/";
+const dbName = "jornada-fullstack-aug-22";
 
 // Declaração da função main()
 async function main() {
@@ -18,6 +18,7 @@ async function main() {
   console.log("Conectando com o banco de dados...");
 
   const client = await MongoClient.connect(url);
+  console.log("MongoDB conectado com sucesso")
   const db = client.db(dbName);
   const collection = db.collection("pontuacoes");
 
