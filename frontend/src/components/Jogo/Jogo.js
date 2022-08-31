@@ -7,7 +7,7 @@ import pipe from  "../../assets/pipe.png";
 import { useEffect, useRef, useState } from 'react';
 
 
-function Jogo() {
+function Jogo(props) {
 
     // console.log('Componente Jogo sendo renderizado');
 
@@ -45,6 +45,7 @@ function Jogo() {
 
     // console.log("Mário está no cano?", valor);
     setEstaMorto(true);
+    props.onMorrer();
   }, 100);
 //   console.log({estaMorto});
 
