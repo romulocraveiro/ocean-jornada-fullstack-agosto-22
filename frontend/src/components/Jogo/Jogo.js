@@ -85,6 +85,7 @@ function Jogo() {
 
     return (
         <div className="jogo">
+            <div>Pntos: {pontos}</div>
             <img className="nuvens" src={clouds} alt="Nuvens" />
             <img ref={marioRef} className={marioClassName} src={marioImage} alt="Mario" />
             <img ref={pipeRef} className={"pipe " + pararAnimacao} src={pipe} alt="Pipe" />
